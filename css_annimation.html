@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>css annimation ex12</title>
+    <style>
+      * {
+        margin: 0;
+      }
+
+      .img1 {
+        width: 100%;
+      }
+
+      button {
+        position: fixed;
+        top: 40px;
+        color: #fff;
+        height: 40px;
+        background-color: transparent;
+        border: 2px solid white;
+        font-size: 20px;
+        animation: bordermove 4s infinite;
+        /* border-radius: 15px; */
+      }
+
+      .bnt1 {
+        left: 30px;
+      }
+
+      .btn2 {
+        right: 30px;
+      }
+
+      @keyframes bordermove {
+        0% {
+          border-radius: 5px;
+          padding: 10 30px;
+        }
+
+        50% {
+          border-radius: 20px;
+          padding: 2 5px;
+          transform: scale(1.2);
+        }
+
+        100% {
+          border-radius: 5px;
+          padding: 10 30px;
+        }
+      }
+
+      h1 {
+        position: fixed;
+        z-index: 1;
+        top: 50%;
+        width: 100%;
+        color: #fff;
+        font-size: 50px;
+        font-family: sans-serif;
+        text-align: center;
+        animation: mymove 2.5s infinite;
+        background-color: burlywood;
+      }
+
+      @keyframes mymove {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        50% {
+          transform: translate(0, 20px);
+        }
+
+        100% {
+          transform: translate(0, 0);
+        }
+      }
+
+      .buubles {
+        display: flex;
+        justify-content: space-around;
+        position: fixed;
+        bottom: -30px;
+        width: 100%;
+      }
+
+      @keyframes buubles {
+        0% {
+          transform: translate(0, 0);
+        }
+
+        100% {
+          transform: translate(0, -700px);
+          opacity: 0;
+        }
+      }
+
+      .img11 {
+        animation: buubles 5s infinite;
+        width: 50px;
+        height: 50px;
+      }
+
+      .img2 {
+        animation: buubles 6s infinite;
+        width: 36px;
+        height: 36px;
+      }
+
+      .img3 {
+        animation: buubles 7s infinite;
+        width: 20px;
+        height: 20px;
+      }
+
+      .img4 {
+        animation: buubles 4.5s infinite;
+        width: 50px;
+        height: 50px;
+      }
+
+      .img5 {
+        animation: buubles 9s infinite;
+        width: 15px;
+        height: 15px;
+      }
+
+      .img6 {
+        animation: buubles 6s infinite;
+        width: 25px;
+        height: 25px;
+      }
+
+      .img7 {
+        animation: buubles 12s infinite;
+        width: 30px;
+        height: 30px;
+      }
+
+      .pageloading {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        margin: 200px;
+        border-top: 5px solid rgb(18, 78, 241);
+        border-right: 5px solid rgb(18, 78, 241);
+      }
+
+      .pageloading {
+        animation: pageloading 1s infinite linear;
+        /* transform: rotate(360deg);
+    transition: 1s all; */
+      }
+
+      @keyframes pageloading {
+        0% {
+          transform: rotate(0deg);
+        }
+
+        100% {
+          transform: rotate(360deg);
+        }
+      }
+    </style>
+  </head>
+
+  <body>
+    <button class="btn1">sign in</button>
+    <button class="btn2">sign up</button>
+    <img
+      class="img1"
+      src="https://tse3.mm.bing.net/th?id=OIP.TTtMMa0z8yTNmFL1WbzcFAHaFj&pid=Api"
+      alt=""
+    />
+    <h1>Be silent like deep water🐟</h1>
+    <div class="buubles">
+      <img
+        class="img img11"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+      <img
+        class="img img2"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+      <img
+        class="img img3"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+      <img
+        class="img img4"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+      <img
+        class="img img5"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+      <img
+        class="img img6"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+      <img
+        class="img img7"
+        src="https://pngimg.com/uploads/soap_bubbles/soap_bubbles_PNG26.png"
+        alt=""
+      />
+    </div>
+    <div class="pageloading"></div>
+
+    <div>
+      <p></p>
+
+      <p></p>
+
+      <p></p>
+
+      <p></p>
+      <p></p>
+      <p></p>
+      <p></p>
+    </div>
+  </body>
+</html>
